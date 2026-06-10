@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse handmade Lefa arts and crafts and coordinate orders directly with the maker."
+    />
+    <meta name="theme-color" content="#9f3f24" />
+    <title>Lefa Arts & Crafts | Handmade Catalogue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#catalogue">Skip to catalogue</a>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Lefa Arts and Crafts home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="19"></circle>
+            <path d="M14 28c5-11 15-14 22-10-2 10-9 16-20 16"></path>
+            <path d="M17 32c5-6 10-10 17-13"></path>
+          </svg>
+        </span>
+        <span>
+          <strong data-business-name>Lefa Arts & Crafts</strong>
+          <small>Made by hand. Shared with care.</small>
+        </span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#story">Our story</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#how-it-works">How to order</a>
+      </nav>
+
+      <button class="basket-button" id="basketButton" type="button" aria-label="Open enquiry basket">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 8h16l-1.4 11H5.4L4 8Z"></path>
+          <path d="m8 9 1-4h6l1 4"></path>
+        </svg>
+        <span>Basket</span>
+        <span class="basket-count" id="basketCount">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Handmade in Southern Africa</p>
+          <h1>Craft with a story you can <em>carry home.</em></h1>
+          <p class="hero-intro">
+            Discover beadwork, woven pieces, decorative objects and thoughtful gifts.
+            Every item is coordinated directly with us before payment.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#catalogue">Explore the catalogue</a>
+            <a class="text-link" href="#how-it-works">
+              See how ordering works
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <dl class="hero-details">
+            <div>
+              <dt>Small-batch</dt>
+              <dd>Handmade pieces</dd>
+            </div>
+            <div>
+              <dt>Direct</dt>
+              <dd>Maker coordination</dd>
+            </div>
+            <div>
+              <dt>Flexible</dt>
+              <dd>Collection or delivery</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-art" aria-label="Decorative collection of handcrafted objects">
+          <div class="sun-disc"></div>
+          <div class="hero-card card-basket">
+            <span class="woven-line line-one"></span>
+            <span class="woven-line line-two"></span>
+            <span class="woven-line line-three"></span>
+          </div>
+          <div class="hero-card card-necklace">
+            <span></span>
+          </div>
+          <div class="hero-card card-vessel">
+            <span></span>
+          </div>
+          <p>Objects of beauty,<br />made slowly.</p>
+        </div>
+      </section>
+
+      <section class="story" id="story">
+        <div>
+          <p class="eyebrow">The collection</p>
+          <h2>Pieces shaped by hand, colour and patience.</h2>
+        </div>
+        <div class="story-copy">
+          <p>
+            This catalogue is a window into our current work. Because each item is handmade,
+            colours, details and availability may vary slightly. That difference is part of
+            what makes every piece personal.
+          </p>
+          <p>
+            Add the pieces you like to your enquiry basket. We will confirm availability,
+            delivery and payment details with you directly.
+          </p>
+        </div>
+      </section>
+
+      <section class="catalogue-section" id="catalogue">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Current collection</p>
+            <h2>Browse the catalogue</h2>
+          </div>
+          <p id="catalogueCount"></p>
+        </div>
+
+        <div class="catalogue-tools">
+          <div class="filter-list" id="filterList" role="group" aria-label="Filter products">
+            <button class="filter active" type="button" data-filter="all">All pieces</button>
+            <button class="filter" type="button" data-filter="beadwork">Beadwork</button>
+            <button class="filter" type="button" data-filter="woven">Woven</button>
+            <button class="filter" type="button" data-filter="decor">Home decor</button>
+            <button class="filter" type="button" data-filter="gifts">Gifts</button>
+          </div>
+          <label class="search-field">
+            <span class="sr-only">Search catalogue</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m16 16 5 5"></path>
+            </svg>
+            <input id="searchInput" type="search" placeholder="Search pieces" />
+          </label>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <h3>No pieces found</h3>
+          <p>Try another category or search phrase.</p>
+        </div>
+      </section>
+
+      <section class="order-process" id="how-it-works">
+        <div class="process-heading">
+          <p class="eyebrow">Simple and personal</p>
+          <h2>How your order works</h2>
+          <p>No automated checkout. We confirm every detail with you first.</p>
+        </div>
+        <ol>
+          <li>
+            <span>01</span>
+            <h3>Choose your pieces</h3>
+            <p>Add catalogue items to your enquiry basket.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Send the enquiry</h3>
+            <p>WhatsApp opens with your selected items already listed.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>We confirm details</h3>
+            <p>We check stock, colour, quantities, delivery and timing.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3>Payment is arranged</h3>
+            <p>Payment instructions are shared only after confirmation.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact-panel">
+        <div>
+          <p class="eyebrow">Questions or custom work</p>
+          <h2>Looking for something particular?</h2>
+          <p>
+            Tell us what you have in mind. We can discuss colour, quantity, gifting and
+            available custom options.
+          </p>
+        </div>
+        <a class="button button-light" id="generalWhatsAppLink" href="#" target="_blank" rel="noreferrer">
+          Start a WhatsApp conversation
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">
+        <strong data-business-name>Lefa Arts & Crafts</strong>
+        <p>Handmade arts, crafts and gifts.</p>
+      </div>
+      <div>
+        <span>Contact</span>
+        <a id="footerEmail" href="#"></a>
+        <a id="footerPhone" href="#"></a>
+      </div>
+      <div>
+        <span>Ordering</span>
+        <p>Availability and payment are confirmed directly.</p>
+      </div>
+      <p class="copyright">© <span id="year"></span> <span data-business-name>Lefa Arts & Crafts</span></p>
+    </footer>
+
+    <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+    <aside class="basket-drawer" id="basketDrawer" aria-labelledby="basketTitle" aria-hidden="true">
+      <div class="drawer-header">
+        <div>
+          <p class="eyebrow">Your selection</p>
+          <h2 id="basketTitle">Enquiry basket</h2>
+        </div>
+        <button class="icon-button" id="closeBasketButton" type="button" aria-label="Close basket">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m5 5 14 14M19 5 5 19"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="basket-items" id="basketItems"></div>
+      <div class="basket-empty" id="basketEmpty">
+        <span aria-hidden="true"></span>
+        <h3>Your basket is waiting</h3>
+        <p>Add pieces from the catalogue to prepare an enquiry.</p>
+      </div>
+      <div class="basket-footer" id="basketFooter" hidden>
+        <div class="basket-total">
+          <span>Estimated item total</span>
+          <strong id="basketTotal">R0</strong>
+        </div>
+        <p>Delivery and final availability will be confirmed before payment.</p>
+        <button class="button button-primary full-width" id="sendEnquiryButton" type="button">
+          Send enquiry on WhatsApp
+        </button>
+        <button class="clear-button" id="clearBasketButton" type="button">Clear basket</button>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
