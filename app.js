@@ -56,6 +56,19 @@ const products = [
     ],
   },
   {
+    id: "bracelet-centre-band",
+    name: "Ostrich Eggshell Centre-Band Bracelet",
+    category: "beadwork",
+    categoryLabel: "Beadwork",
+    price: 240,
+    description: "A handwoven ostrich eggshell bracelet featuring a bold earthy brown centre band and a button-and-loop closure.",
+    palette: "earth",
+    images: [
+      "assets/ostrich-eggshell-centre-band-bracelet-worn.jpg",
+      "assets/ostrich-eggshell-centre-band-bracelet-detail.jpg",
+    ],
+  },
+  {
     id: "gift-keyrings",
     name: "Beaded Keyring Pair",
     category: "gifts",
