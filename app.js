@@ -31,12 +31,16 @@ const products = [
   },
   {
     id: "bracelet-stack",
-    name: "Beaded Bracelet Stack",
+    name: "Ivory & Gold Hand Bracelet",
     category: "beadwork",
     categoryLabel: "Beadwork",
     price: 240,
-    description: "Three slim bracelets with complementary colour patterns.",
+    description: "A handwoven ivory bracelet finished with warm gold accents and a button closure.",
     palette: "night",
+    images: [
+      "assets/ivory-gold-bracelet-worn.jpg",
+      "assets/ivory-gold-bracelet-detail.jpg",
+    ],
   },
   {
     id: "gift-keyrings",
@@ -124,6 +128,19 @@ function formatMoney(value) {
 }
 
 function productArtwork(product) {
+  if (product.images?.length) {
+    return `
+      <div class="product-art product-photo">
+        <img src="${product.images[0]}" alt="${product.name}" loading="lazy">
+        ${
+          product.images[1]
+            ? `<img class="product-photo-alt" src="${product.images[1]}" alt="${product.name}, alternate view" loading="lazy">`
+            : ""
+        }
+      </div>
+    `;
+  }
+
   return `
     <div class="product-art art-${product.palette}" aria-hidden="true">
       <span class="art-shape shape-a"></span>
