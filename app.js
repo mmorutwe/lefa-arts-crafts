@@ -43,6 +43,19 @@ const products = [
     ],
   },
   {
+    id: "bracelet-chevron",
+    name: "Ostrich Eggshell Chevron Bracelet",
+    category: "beadwork",
+    categoryLabel: "Beadwork",
+    price: 240,
+    description: "A handwoven ostrich eggshell bracelet with a textured chevron pattern, earthy brown details and a button-and-loop closure.",
+    palette: "earth",
+    images: [
+      "assets/ostrich-eggshell-chevron-bracelet-worn.jpg",
+      "assets/ostrich-eggshell-chevron-bracelet-detail.jpg",
+    ],
+  },
+  {
     id: "gift-keyrings",
     name: "Beaded Keyring Pair",
     category: "gifts",
