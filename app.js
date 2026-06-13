@@ -31,15 +31,15 @@ const products = [
   },
   {
     id: "bracelet-stack",
-    name: "Ivory & Gold Hand Bracelet",
+    name: "Ostrich Eggshell Hand Bracelet",
     category: "beadwork",
     categoryLabel: "Beadwork",
     price: 240,
-    description: "A handwoven ivory bracelet finished with warm gold accents and a button closure.",
+    description: "A handwoven bracelet crafted with ostrich eggshell beads, finished with earthy brown accents and a button-and-loop closure.",
     palette: "night",
     images: [
-      "assets/ivory-gold-bracelet-worn.jpg",
-      "assets/ivory-gold-bracelet-detail.jpg",
+      "assets/ostrich-eggshell-bracelet-worn.jpg",
+      "assets/ostrich-eggshell-bracelet-detail.jpg",
     ],
   },
   {
