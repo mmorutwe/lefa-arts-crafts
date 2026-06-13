@@ -2,14 +2,18 @@ const config = window.SAN_CRAFTS_CONFIG;
 
 const products = [
   {
-    id: "necklace-sunset",
-    name: "Sunset Beaded Necklace",
+    id: "necklace-ostrich-eggshell-tassel",
+    name: "Ostrich Eggshell Tassel Necklace",
     category: "beadwork",
     categoryLabel: "Beadwork",
     price: 420,
-    description: "A warm, geometric statement piece finished by hand.",
+    description: "A long handwoven ostrich eggshell necklace with earthy geometric accents and rich brown tassel ends.",
     palette: "sunset",
     badge: "Featured",
+    images: [
+      "assets/ostrich-eggshell-tassel-necklace-detail.jpg",
+      "assets/ostrich-eggshell-tassel-necklace-styled.jpg",
+    ],
   },
   {
     id: "basket-earth",
