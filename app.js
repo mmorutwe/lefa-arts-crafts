@@ -69,6 +69,19 @@ const products = [
     ],
   },
   {
+    id: "bracelet-earth-stripe",
+    name: "Ostrich Eggshell Earth-Stripe Bracelet",
+    category: "beadwork",
+    categoryLabel: "Beadwork",
+    price: 240,
+    description: "A handwoven ostrich eggshell bracelet accented with warm brown stripes and finished with a button-and-loop closure.",
+    palette: "earth",
+    images: [
+      "assets/ostrich-eggshell-earth-stripe-bracelet-worn.jpg",
+      "assets/ostrich-eggshell-earth-stripe-bracelet-detail.jpg",
+    ],
+  },
+  {
     id: "gift-keyrings",
     name: "Beaded Keyring Pair",
     category: "gifts",
