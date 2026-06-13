@@ -265,6 +265,16 @@ const products = [
     images: ["assets/leather-trim-ostrich-eggshell-dotted-cuff.jpg"],
   },
   {
+    id: "cuff-leather-circle-motif",
+    name: "Leather-Trim Ostrich Eggshell Circle-Motif Cuff",
+    category: "beadwork",
+    categoryLabel: "Beadwork",
+    price: 240,
+    description: "A handwoven ostrich eggshell cuff with repeating earth-tone circle motifs, genuine leather end straps and a button closure.",
+    palette: "earth",
+    images: ["assets/leather-trim-ostrich-eggshell-circle-motif-cuff.jpg"],
+  },
+  {
     id: "gift-keyrings",
     name: "Beaded Keyring Pair",
     category: "gifts",
