@@ -71,10 +71,7 @@ const products = [
     price: 240,
     description: "A handwoven bracelet crafted with ostrich eggshell beads, finished with earthy brown accents and a button-and-loop closure.",
     palette: "night",
-    images: [
-      "assets/ostrich-eggshell-bracelet-worn.jpg",
-      "assets/ostrich-eggshell-bracelet-detail.jpg",
-    ],
+    images: ["assets/ostrich-eggshell-bracelet-worn.jpg"],
   },
   {
     id: "bracelet-chevron",
